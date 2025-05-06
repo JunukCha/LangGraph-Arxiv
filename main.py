@@ -124,13 +124,13 @@ def run(query: str) -> State:
             break
 
 # Streamlit UI
-st.title("Smart Agent Evaluator")
+st.title("LangGraph")
 query = st.text_input("Enter your research query:")
 run_button_placeholder = st.empty()
 run_button = run_button_placeholder.button("Evaluate")
 
 if run_button and query:
-    with st.spinner("Running Smart Agent Evaluation..."):
+    with st.spinner("Running LLM Evaluation..."):
         result = None
         for i, state in enumerate(run(query)):
             st.subheader("Summary + Evaluation Log")
