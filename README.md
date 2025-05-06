@@ -14,13 +14,20 @@ This project demonstrates a basic implementation of **Chain of Thought (CoT) rea
 
 ## ⚙️ Installation
 
+### 1. Create a virtual environment
 ```bash
-# 1. Create a virtual environment
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
 
-# 2. Install dependencies
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
+```
+
+### 3. Make sure to create a .env file in the root directory and add your OpenAI API key:
+```
+OPENAI_API_KEY=sk-...
 ```
 
 ## 🚀 Usage
